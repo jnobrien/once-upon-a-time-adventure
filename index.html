@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Damion&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Damion&family=Signika&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&display=swap">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+  
+<body>
+
+  <!--Navigation-->
+
+  <ul>
+    <li class="navbar"><a href="about.html">About this project</a></li>
+  </ul>
+
+    <img id="headerImage" src="header.png" alt="Castle">
+  </div>
+  
+  <!--Introduction-->
+  
+  <div id="introductionDiv" class="center">
+  <h1>Once upon a time...</h2>
+  <p id="intro">In the enchanting kingdom of Eldoria, nestled within the dense, emerald forests, lived Princess Seraphina, a young and curious soul. Seraphina had spent her seventeen years behind the towering walls of the royal palace, shielded from the outside world. But, as the first blush of dawn touched the horizon, it was time for her to  explore the realm she had only heard of in stories and legends - a world full of magic, mythical creatures, and endless adventures. She believed that only by stepping out of the palace could she truly understand the people she was destined to rule one day. Her heart throbbed with excitement and trepidation as she left behind the grandeur of the castle, dressed in plain clothes, her golden tiara concealed beneath a cloak.
+  <br><br>
+  As she stepped outside the castle gates, the world opened up before her. Her first destination was the ancient Whispering Forest, a place known for its mystical secrets and the whispers of the trees. The forest's twisted, towering trees cast long shadows, and Seraphina could hear the gentle rustle of leaves as the trees shared their ancient wisdom. Her journey had begun, and it would be filled with both wonder and peril.
+  </p>
+
+  <div class="centerButtons">
+    <button id="enterForestButton" class="buttonLeft" onclick="enterForest()">Enter the Whispering Forest</button>
+    <button id="aroundForestButton" class="button" onclick="aroundForest()">Find a way around the Whispering Forest</button>
+  </div>
+
+  <!--level 1: enter the forest route-->
+
+  <div id="enterForest" style="display: none;">
+    <div class="fullScreen">
+      <div class="halfScreen">
+        <img class="storyImage" src="enterForest.jpg" alt="Forest">
+      </div>
+      <div class="halfScreen">
+        <p id="enterForestStory">As Seraphina chose the path of courage, she followed the enchanting melody that led her deeper into the heart of the Whispering Forest. The forest guardians, resembling mystical beings with skin like the bark of trees and eyes as green as fresh leaves, welcomed her with open arms. They sensed her sincere yearning to connect with nature and to protect the realm.
+          <br><br>Under their guidance, Seraphina embarked on a rigorous training regimen. She learned to communicate with the creatures of the forest, from the wise old owls to the playful squirrels, forming bonds that would make her a guardian of Eldoria. She mastered the ancient art of harnessing the power of the elements, bending the earth, air, fire, and water to her will.
+          <br><br>In time, as her powers grew, the forest guardians revealed to her a secret path hidden deep within the forest, where a legendary tree, older than memory itself, stood. They believed that if she could solve the riddle presented by the ancient tree, she would unlock her true potential. Seraphina stood before the colossal tree, its roots as thick as serpents and its branches reaching towards the heavens. The riddle echoed in her mind, challenging her:
+        </p>
+  
+        <div class="centerButtons">
+          <button id="chooseTreeButton" class="buttonLeft" onclick="chooseTree()">A tree</button>
+          <button id="chooseFireButton" class="buttonLeft" onclick="chooseFire()">A fire</button>
+          <button id="chooseCloudButton" onclick="chooseCloud()">A cloud</button>
+        </div>
+      </div>
+    </div>
+
+    <!--level 2: choose tree option-->
+
+    <div id="chooseTree" style="display: none;">
+      <img class="storyImage" src="return.jpg" alt="Bed in castle">
+      <p id="chooseTreeStory">Seraphina, standing before the ancient tree, gazed up at its towering branches and answered, "A tree." Her voice held a sense of respect for the wisdom of the forest, and the guardians nodded in approval.
+        <br><br>As her words left her lips, a gentle, cool breeze enveloped her. The forest seemed to shimmer with a soft, green light. Then, everything faded away, and Seraphina found herself in her own bed back at the castle, bathed in the warm morning sunlight. Her adventure in the Whispering Forest felt like a vivid dream, one that had filled her heart with courage and wisdom.
+        <br><br>At first, she thought it was all a product of her imagination, but the memory of the ancient trees and the whispered secrets of the forest remained etched in her mind. She knew that while the forest may have been a dream, the lessons she had learned and the courage she had gained were very real. With newfound determination, she decided to share the wisdom of the Whispering Forest with her people, becoming a kind and just ruler, leading Eldoria into an era of harmony between nature and the kingdom. Her dream had shaped her destiny, and her people would be the better for it.
+      <h2>The end.</h2>
+      </p>
+    </div>
+    
+    <!--level 2: choose fire option-->
+
+    <div id="chooseFire" style="display: none;">
+      <img class="storyImage" src="bigTree.jpg" alt="Large tree">
+      <p id="chooseFireStory">With her choice of "A fire," Seraphina felt a surge of warmth and power course through her. The forest responded to her, leaves rustling in approval, and the very air seemed to dance with her newfound connection to fire. She continued her journey deeper into the Whispering Forest, guided by the flames within her.
+        <br><br>Finally, Seraphina reached the legendary ancient tree, standing tall and wise before her. It beckoned her closer, and as she approached, it whispered ancient secrets, revealing the choices that lay before her.
+        <br><br>The tree presented Seraphina with two branches, each representing a different path:
+        <h2>The Path of Rebirth:</h2> 
+        <p>The ancient tree explained that by choosing this path, Seraphina would embrace her newfound power over fire and become a guardian of the forest, defending the realm against those who threatened it. She would be the protector of nature, entrusted with the eternal task of ensuring the balance of the land.</p>
+        <h2>The Path of Balance:</h2>
+        <p>The tree also revealed another option. If Seraphina chose this path, she would learn to harmonize the elements—earth, air, fire, and water. She would become a beacon of peace and unity, working to bridge the divide between nature and the kingdom, and helping the two coexist in perfect equilibrium.</p>
+      </p>
+
+      <div class="centerButtons">
+        <button id="chooseRebirthButton" class="buttonLeft" onclick="chooseRebirth()">Choose the Path of Rebirth</button>
+        <button id="chooseBalanceButton" onclick="chooseBalance()">Choose the Path of Balance</button>
+      </div>
+
+      <!--level three: path of rebirth ending-->
+
+      <div id="chooseRebirth" style="display: none;">
+        <img class="storyImage" src="fire.jpg" alt="Ring of fire">
+        <p id="chooseRebirthStory">Seraphina, her heart ablaze with determination, chose to embrace the path of rebirth. The tree's leaves rustled with approval, and a warm, golden light enveloped her. With each step she took, she felt herself becoming one with the forest, a guardian of nature's delicate balance.
+          <br><br>Under the tutelage of the ancient tree and the forest guardians, Seraphina honed her fire-controlling abilities to perfection. Her power over the element grew stronger with each passing day, and she became the protector of the Whispering Forest. Her presence ensured that the harmony of the natural world was maintained, and that Eldoria remained untouched by outside threats.
+          <br><br>As the years passed, stories of the forest's guardian, a princess with the power of fire, began to circulate. Her legacy grew as she protected not only the Whispering Forest but the entire kingdom, a symbol of hope and strength. Seraphina's once youthful and naive spirit transformed into one of wisdom and responsibility. She walked through the forest, her heart at peace, knowing that her destiny was fulfilled.
+          <br><br>Seraphina had chosen the path of rebirth, becoming a true guardian of Eldoria and ensuring that its magical secrets and mystical creatures would endure for generations to come.
+          <h2>The end.</h2>
+        </p>
+      </div>
+
+      <!--level three: path of balance ending-->
+        
+          <div id="chooseBalance" style="display: none;">
+            <img class="storyImage" src="elements.jpg" alt="Elements: fire, earth, wood, water">
+            <p id="chooseBalanceStory">With a profound understanding of the delicate equilibrium of the world, Seraphina chose the path of balance. She reached out and touched the branch representing this path, and the ancient tree responded with a gentle, shimmering light.
+              <br><br>As she embarked on this path, Seraphina learned to harmonize the elements. She discovered that the true power lay not in mastering a single element, but in blending them together to create something greater. Guided by the ancient tree, she sought to bridge the gap between the natural world and her royal duties.
+              <br><br>Seraphina became a symbol of unity. Her diplomatic skills and her unique understanding of the natural world allowed her to bring the kingdom of Eldoria and the Whispering Forest closer together. She negotiated treaties and agreements that protected the forest while ensuring the prosperity of the kingdom. Her actions helped foster a deeper connection between the people of Eldoria and the enchanted realm that surrounded them.
+              <br><br>Over time, the Whispering Forest thrived, and the people of Eldoria grew to appreciate and protect the natural world. Seraphina's legacy was one of peace, coexistence, and a kingdom in perfect harmony with nature. She was revered not only as a wise ruler but also as the bridge between two worlds.
+              <br><br>Choosing the path of balance, Seraphina had united her people and the forest, ensuring a future where both could thrive together, and in doing so, she fulfilled her destiny as a wise and compassionate leader.
+            <h2>The end.</h2>
+            </p>
+          </div>
+    </div>
+
+    <!--level two: choose cloud option-->
+
+    <div id="chooseCloud" style="display: none;">
+      <img class="storyImage" src="return.jpg" alt="Bed in castle">
+      <p id="chooseCloudStory">With unwavering confidence, Seraphina declared, "A cloud." The ancient tree seemed to acknowledge her response, and a soft, iridescent light enveloped her.
+        <br><br>Moments later, Seraphina blinked, and she found herself in her sumptuous bed back at the castle. It was as though the entire journey through the Whispering Forest had been a vivid dream. She remembered the ancient tree, the forest guardians, and the riddle, but it all felt like fragments of an enchanting but distant reverie.
+        <br><br>Seraphina's heart raced as she realized that she was safely back in the comforts of her royal chambers. She could hear the familiar sounds of the castle, the bustling of servants, and the chatter of nobles. It was as if the forest had never existed.
+        <br><br>Was it all a dream? Seraphina wondered. The experience had been so vivid, so real. She couldn't shake the feeling that it had held a deeper meaning. With a sense of both loss and wonder, Seraphina pondered the mysterious journey and the riddle she had answered. Whether a dream or reality, it had left her forever changed, filling her heart with a newfound appreciation for the world beyond the castle walls.
+      <h2>The end.</h2>
+      </p>
+    </div>
+  </div>
+
+  <!--level one: go around the forest route-->
+  <div id="aroundForest" style="display: none;">
+    <img class="storyImage" src="path.jpg" alt="Winding path">
+    <p id=aroundForestStory>Seraphina, hesitant to plunge into the mysteries of the Whispering Forest, decided to retrace her steps and follow the group of travelers on their diplomatic mission to a neighboring kingdom. This path led her into the world of politics, alliances, and the intricacies of ruling a kingdom. She spent years mastering the art of negotiation, forming alliances, and learning the delicate dance of diplomacy.
+      <br><br>Seraphina proved to be a quick learner, understanding that the key to maintaining peace and stability within Eldoria was to establish strong ties with neighboring kingdoms. She excelled in her diplomatic endeavors, bringing prosperity to her homeland and ensuring its security.
+      As Seraphina journeyed with the group of travelers, she found herself at a crossroads when they reached the borders of two neighboring kingdoms, each offering her a unique opportunity for alliance.
+      <h2>The Kingdom of Aurelia:</h2>
+      <p>The first option was the Kingdom of Aurelia, known for its riches and powerful merchant guilds. They offered vast wealth and a formidable trade network. The rulers of Aurelia promised to support Eldoria economically, providing resources and a prosperous future for its people. Seraphina saw this alliance as a path to prosperity and growth.</p>
+      <h2>The Kingdom of Valeria:</h2>
+      <p>The second option was the Kingdom of Valeria, renowned for its strong military and skilled knights. They pledged to provide military support and protection to Eldoria. Valeria's leaders believed in the strength of unity and offered to help defend Eldoria against any external threats. This alliance would guarantee the safety and security of her realm.
+      <br><br>Seraphina pondered the choice before her, understanding that her decision would have significant consequences for her kingdom's future. She could ally with the wealth of Aurelia or the protection of Valeria. Each choice held its own merit, but the heart of diplomacy was about compromise. Seraphina's decision would test her diplomatic skills and shape the future of Eldoria
+    </p>
+
+    <div class="centerButtons">
+      <button id="chooseAureliaButton" class="buttonLeft" onclick="chooseAurelia()">Ally with the Kingdom of Aurelia</button>
+      <button id="chooseValeriaButton" onclick="chooseValeria()">Ally with the Kingdom of Valeria</button>
+    </div>
+
+    <!--level two: choose Kingdom of Aurelia option-->
+
+    <div id="chooseAurelia" style="display: none;">
+      <img class="storyImage" src="prosperity.jpg" alt="Chest of coins">
+      <p id="chooseAureliaStory">Seraphina, guided by her wisdom, chose to form an alliance with the Kingdom of Aurelia. This alliance brought a new era of prosperity to Eldoria. The resources and wealth pouring in from their trade networks revitalized the economy, improved living conditions, and allowed Eldoria to flourish like never before.
+        <br><br>As Eldoria grew economically, Seraphina was faced with a pivotal decision. The rulers of Aurelia, in gratitude for the alliance, offered her a choice: she could trade one of her kingdom's most valuable resources to further strengthen the bond between the two kingdoms. The two options were:
+        <h2>Eldoria's Rare Gemstones:</h2>
+        <p>These precious gemstones, found deep within the Eldorian mines, were renowned for their beauty and mystical properties. Trading them with Aurelia would solidify the alliance and greatly enhance Eldoria's wealth.</p>
+        <h2>Eldoria's Ancient Knowledge:</h2> 
+        <p>Eldoria possessed a repository of ancient wisdom, containing forgotten magical arts and profound knowledge of the land's mystical secrets. Sharing this knowledge with Aurelia could lead to new discoveries and advancements in both realms.
+        <br><br>Seraphina's choice now held significant weight. Each option had its benefits and potential drawbacks. The decision she made would determine the course of her kingdom's future and her legacy as a diplomat.
+      </p>
+
+      <div class="centerButtons">
+        <button id="chooseGemstonesButton" class="buttonLeft" onclick="chooseGemstones()">Trade Eldoria's Rare Gemstones</button>
+        <button id="chooseKnowledgeButton" onclick="chooseKnowledge()">Trade Eldoria's Ancient Knowledge</button>
+      </div>
+
+      <!--level three: share rare gemstones-->
+
+      <div id="chooseGemstones" style="display: none;">
+        <img class="storyImage" src="gemstones.jpg" alt="Gemstones">
+        <p id="chooseGemstonesStory">Seraphina made the momentous decision to trade Eldoria's precious gemstones with the Kingdom of Aurelia, solidifying their alliance. The gemstones, renowned for their dazzling beauty and mystical properties, were sent to Aurelia, and in return, Eldoria received a bountiful reward of wealth and resources.
+          <br><br>The influx of riches transformed Eldoria's economy. With Aurelia's support, Eldoria's merchants established lucrative trade routes, exporting their unique resources, exquisite crafts, and mystical artifacts. Eldoria became a sought-after trading partner for kingdoms far and wide. The newfound wealth enriched the kingdom, and its people enjoyed a higher standard of living, improved infrastructure, and access to better education and healthcare.
+          <br><br>The alliance with Aurelia brought prosperity and abundance to Eldoria, creating an era of growth and economic stability. Seraphina's diplomatic acumen had not only secured the kingdom's future but also secured her place in history as a wise and shrewd diplomat, ensuring her legacy as a ruler who brought unparalleled wealth and prosperity to her realm.
+        <h2>The end.</h2>
+        </p>
+      </div>
+
+      <!--level three: share knowledge-->
+
+      <div id="chooseKnowledge" style="display: none;">
+        <img class="storyImage" src="books.jpg" alt="Books">
+        <p id="chooseKnowledgeStory">With a sense of reverence for the wisdom of her ancestors, Seraphina made the profound choice to trade Eldoria's ancient knowledge with the Kingdom of Aurelia, deepening their alliance. The repository of forgotten magical arts and mystical secrets was handed over to Aurelia, sparking a period of enlightenment and exploration in both realms.
+          <br><br>The transfer of Eldoria's ancient knowledge ignited a renaissance of discovery and advancement in Aurelia and Eldoria alike. Scholars from both kingdoms collaborated, unlocking long-forgotten secrets and delving into new realms of magic. Eldorian mages shared their mystical arts, enhancing the magical abilities of Aurelia's spellcasters, while scholars from Aurelia revitalized and expanded Eldoria's libraries with fresh insights and innovations.
+          <br><br>The alliance not only solidified diplomatic ties but also ushered in a new era of enlightenment, cooperation, and magic. Eldoria's landscapes were transformed as new spells and enchantments were cast to protect the land. With this exchange of wisdom, the two kingdoms thrived in mutual growth, strengthening their alliance and ensuring a brighter future for both realms. Seraphina's choice had not only united their fates but had sown the seeds of an era of magic, wisdom, and progress that would be celebrated for generations to come.
+        <h2>The end.</h2>
+        </p>
+      </div>
+    </div>
+
+    <!--level two: choose Kingdom of Valeria option-->
+
+    <div id="chooseValeria" style="display: none;">
+      <img class="storyImage" src="sword.jpg" alt="Sword">
+      <p id="chooseValeriaStory">Seraphina, driven by the desire for the security and protection of her kingdom, chose to forge an alliance with the Kingdom of Valeria, renowned for its formidable military and skilled knights. The partnership brought an initial period of stability and safety to Eldoria as Valeria's forces patrolled its borders, deterring external threats.
+        <br><br>However, as time passed, Seraphina began to notice a shift in the Kingdom of Valeria's behavior. The Valerian rulers, tempted by Eldoria's wealth and resources, grew increasingly opportunistic. They demanded increasingly exorbitant tribute payments and sought control over key strategic areas of Eldoria. What had begun as a protective alliance gradually turned into a stifling dominance.
+        <br><br>As the situation escalated, Seraphina was faced with a difficult choice. She could either submit to Valeria's demands, compromising Eldoria's resources and independence, or resist, risking war and the safety of her people. The once-trusted alliance had become a double-edged sword, and Seraphina's diplomatic skills were put to the ultimate test as she had to navigate a treacherous path to safeguard her kingdom from the betrayal she never anticipated.
+      </p>
+
+      <div class="centerButtons">
+        <button id="chooseSubmitButton" class="buttonLeft" onclick="chooseSubmit()">Submit to Valeria's demands</button>
+        <button id="chooseWarButton" onclick="chooseWar()">Resist Valeria's demands</button>
+      </div>
+
+      <!--level three: submit to demands-->
+
+      <div id="chooseSubmit" style="display: none;">
+        <img class="storyImage" src="intro.jpg" alt="Castle">
+        <p id="chooseSubmitStory">In the face of mounting pressure and the risk of war, Seraphina chose to submit to Valeria's demands, albeit with a heavy heart. The Kingdom of Valeria gained more influence over Eldoria, and the tribute payments were made to ensure the safety of Seraphina's people.
+          <br><br>As the years passed, a significant change took place in Valeria. The King of Valeria, who had been the driving force behind the exploitation of Eldoria, passed away due to unforeseen circumstances. Surprisingly, the throne was taken over by the benevolent Queen Isabella, who had long harbored concerns about her kingdom's oppressive actions.
+          <br><br>Queen Isabella, recognizing the hardships Eldoria had endured under her late husband's rule, sought to make amends. She sent a message to Seraphina, inviting her for a diplomatic meeting at the border between their kingdoms.
+          <br><br>When they met, Queen Isabella expressed her genuine desire for reconciliation. She acknowledged the unfair treatment and exploitation that Eldoria had suffered and pledged to rectify the situation. Understanding the benefits of a positive alliance over oppression, Queen Isabella proposed a renewed partnership. Both kingdoms would work together, not as oppressor and oppressed, but as equals, sharing resources, security, and fostering a lasting peace.
+          <br><br>Seraphina, moved by the queen's sincerity, accepted the offer. The renewed alliance between Eldoria and Valeria was one of trust, fairness, and cooperation. The once-oppressive situation was transformed into a union built on mutual respect and the shared goal of ensuring the well-being and security of both kingdoms.
+          <br><br>Seraphina's diplomatic skills had not only preserved her kingdom but had also turned an oppressive situation into an opportunity for a harmonious and prosperous future. Eldoria and Valeria, under the leadership of Seraphina and Queen Isabella, thrived in an alliance based on fairness and trust, securing a brighter future for their realms.
+        <h2>The end.</h2>
+        </p>
+      </div>
+
+      <!--level three: risk war-->
+
+      <div id="chooseWar" style="display: none;">
+        <img class="storyImage" src="intro.jpg" alt="Castle">
+        <p id="chooseWarStory">Recognizing the gradual shift in Valeria's behavior and the stifling dominance they were imposing, Seraphina made the bold decision to resist Valeria's demands, determined to protect Eldoria's independence and resources. She knew that war was a grave risk, one she wished to avoid at all costs. Instead, Seraphina embarked on a diplomatic journey that would showcase her exceptional negotiation skills.
+          <br><br>Through a series of shrewd diplomatic maneuvers, Seraphina managed to de-escalate the situation. She sought to bring Valeria back to the original spirit of the alliance, emphasizing the importance of mutual support and cooperation between the two kingdoms. Her words and persuasive diplomacy convinced the Valerian rulers to reconsider their aggressive stance.
+          <br><br>The negotiations resulted in a revised treaty that reestablished a balanced alliance, with mutual benefits for both kingdoms. Valeria pledged to protect Eldoria without imposing stifling demands, recognizing the strength of a united front. The kingdom of Eldoria regained its independence and continued to prosper, while maintaining a secure alliance with Valeria.
+          <br><br>Seraphina's successful diplomacy averted the threat of war, preserving the well-being and freedom of her people. The experience deepened her understanding of the complexities of diplomacy and established her as a ruler of wisdom and strength. Eldoria's future was secured, and the alliance with Valeria, though initially treacherous, became a foundation of trust, shared prosperity, and mutual support.
+        <h2>The end.</h2>
+        </p>
+      </div>
+    </div>
+  </div>
+
+    <a class="topLink" href="" id="js-top">
+        <span class="tooltiptext">Take a time travel potion and restart</span>
+      <img src="potion.png" id="potion" alt="Potion bottle">
+    </a>
+
+</body>
+
+<script src="script.js"></script>
+</html>

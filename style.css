@@ -1,0 +1,201 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #EDEEF1;
+}
+
+/*fonts*/
+h1 {
+  font-family: 'Damion', cursive;
+  font-size: 8vw;
+  color: #1F252F;
+  margin: 8px 0 0 0;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Istok Web', sans-serif;
+  font-size: 14pt;
+  text-align: center;
+  color: #1F252F;
+}
+
+p {
+  font-family: 'Signika', sans-serif;
+  font-size: 12pt;
+  text-align: center;
+  color: #1F252F;
+}
+
+.tooltiptext {
+  font-family: 'Signika', sans-serif;
+  font-size: 12pt;
+  text-align: center;
+  color: #EDEEF1;
+}
+
+button {
+  font-family: 'Signika', sans-serif;
+  font-size: 12pt;
+}
+
+/*navigation and header image*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3C4C70;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: #EDEEF1;
+  font-family: 'Signika', sans-serif;
+  font-size: 12pt;
+  padding: 12px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background: #EDEEF1;
+  color: #1F252F;
+}
+
+#headerImage {
+  width: 100%
+}
+
+/*paragraphs*/
+.center {
+  width: 85%;   
+  padding: 0 7.5% 0 7.5%;
+}
+
+#aboutParagraph {
+  padding: 0 0 40px 0;
+}
+  
+/*images*/ 
+
+.storyImage {
+  border-radius: 100px 100px 100px 100px;
+  width: 100px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+/*buttons*/
+button {
+  width: 300px;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  background-color: #3C4C70;
+  color: #EDEEF1;
+  margin: 0 0 20px 0;
+  cursor: pointer;
+
+}
+
+.centerButtons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.buttonLeft {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 650px) {
+   .centerButtons {
+      display: block;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+
+    .buttonLeft {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+   }
+
+  .fullScreen {
+    display: block;
+    width: 100%;
+  }
+
+  .buttonLeft {
+    margin-bottom: 20px;
+  }
+}
+
+/*sticky back to top*/
+.topLink {
+  transition: all .25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+
+ cursor: pointer;
+ align-items: center;
+ justify-content: center;
+ margin: 0 3em 3em 0;
+ border-radius: 50%;
+ padding: .25em;
+ width: 40px;
+ height: 40px;
+ background-color: #3C4C70;
+}
+
+#potion {
+  height: 38px;
+  width: auto;
+}
+
+.topLink {
+  position: left;
+}
+
+/* Tooltip text */
+.topLink .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #1F252F;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -70px;
+}
+
+.topLink:hover .tooltiptext {
+  visibility: visible;
+}
+
+@media screen and (max-width: 650px) {
+ .topLink {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0 1em 1em 0;
+ }
